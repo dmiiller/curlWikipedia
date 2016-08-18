@@ -1,0 +1,6 @@
+myvar=`cat url.txt`
+rm page
+curl $myvar > page
+rm url.txt
+echo $myvar > url.txt
+echo "ss"
